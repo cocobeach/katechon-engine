@@ -28,9 +28,9 @@ Ollama is the local AI engine that powers the Ministers and analysis features.
 
 #### Option A: From MSI Installer (Recommended )
 
-1. **Download the Installer**
-  - Download [`Katechon-Engine_1.0.0_x64_en-US.msi`](https://hub.docker.com/r/docker/labs-vscode-installer) from the releases
-  - Save it to your Downloads folder
+1. **Build the Installer**
+   - Currently, you need to build from source (see Option B below)
+   - Pre-built MSI installers will be available in future releases on GitHub
 
 1. **Run the Installer**
   - Double-click the MSI file
@@ -58,7 +58,7 @@ Ollama is the local AI engine that powers the Ministers and analysis features.
 # Open PowerShell or Terminal
 
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/cocobeach/katechon-engine.git
 cd katechon-engine
 
 # Install pnpm (if not already installed )

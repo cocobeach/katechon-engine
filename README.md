@@ -91,7 +91,7 @@ The application requires a local Ollama instance for AI functionality.
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/cocobeach/katechon-engine.git
 cd katechon-engine
 
 # Install dependencies
