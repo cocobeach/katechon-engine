@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useStore } from './store/useStore';
 import { Map } from './components/Map';
 import { MinisterSidebar } from './components/MinisterSidebar';
@@ -6,13 +6,13 @@ import { Chat } from './components/Chat';
 import { RSSFeedPanel } from './components/RSSFeedPanel';
 import { PillarHealth } from './components/PillarHealth';
 import { Settings } from './components/Settings';
-import { Settings as SettingsIcon, FileText, Share2 } from 'lucide-react';
+import { Settings as SettingsIcon } from 'lucide-react';
 import { invoke } from '@tauri-apps/api/core';
 
 function App() {
   const { currentTab, setCurrentTab, rssFeeds, addMapEvent } = useStore();
   const [showSettings, setShowSettings] = useState(false);
-  const [rssPollingActive, setRssPollingActive] = useState(true);
+  const [rssPollingActive] = useState(true);
 
   // Poll RSS feeds every 5 minutes
   useEffect(() => {

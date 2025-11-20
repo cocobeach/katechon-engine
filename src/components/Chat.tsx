@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useStore, ChatMessage, MapEvent } from '../store/useStore';
+import { useStore, MapEvent } from '../store/useStore';
 import { Send, Trash2, Users } from 'lucide-react';
 import { invoke } from '@tauri-apps/api/core';
 
